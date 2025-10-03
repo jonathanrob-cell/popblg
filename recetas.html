@@ -1,0 +1,104 @@
+A<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recetas</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Mi Logo" width="120">
+  </div>
+  <h1>Mi Recetario</h1>
+
+  <button class="toggle-mode" onclick="toggleMode()">
+    <i id="mode-icon" class="fas fa-moon"></i>
+  </button>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="sobremi.html">Sobre mí</a>
+    <a href="recetas.html">Recetas</a>
+  </nav>
+</header>
+
+<main>
+  <section class="todas-recetas">
+    <h2>Todas mis recetas mexicanas</h2>
+    <div class="recetas">
+
+      <div class="receta-card">
+        <h3>Tacos al Pastor</h3>
+        
+      </div>
+
+      <div class="receta-card">
+        <h3>Chiles en Nogada</h3>
+    
+      </div>
+
+      <div class="receta-card">
+        <h3>Enchiladas Verdes</h3>
+        
+      </div>
+
+      <div class="receta-card">
+        <h3>Pozole Rojo</h3>
+        
+      </div>
+
+      <div class="receta-card">
+        <h3>Mole Poblano</h3>
+        
+      </div>
+
+      <div class="receta-card">
+        <h3>Quesadillas de Huitlacoche</h3>
+        
+      </div>
+
+      <div class="receta-card">
+        <h3>Tamales de Rajas</h3>
+        
+      </div>
+
+      <div class="receta-card">
+        <h3>Guacamole</h3>
+    
+      </div>
+
+    </div>
+  </section>
+
+  <section class="info-sobre-mi">
+    <h2>Información sobre mí</h2>
+    <p>¡Hola! Soy Jonathan, amante de la cocina mexicana y creador de este recetario. Aquí comparto mis recetas favoritas para que las disfrutes en casa.</p>
+    <a href="sobremi.html">Leer más sobre mí →</a>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Mi Recetario</p>
+</footer>
+
+<script>
+  
+  function toggleMode() {
+    document.body.classList.toggle('light-mode');
+    const icon = document.getElementById('mode-icon');
+    if(document.body.classList.contains('light-mode')){
+      icon.classList.remove('fa-moon');
+      icon.classList.add('fa-sun');
+    } else {
+      icon.classList.remove('fa-sun');
+      icon.classList.add('fa-moon');
+    }
+  }
+</script>
+
+</body>
+</html>

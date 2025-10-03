@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quesadillas de Huitlacoche</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.jpg" alt="Mi Logo" width="120">
+  </div>
+  <h1>Quesadillas de Huitlacoche</h1>
+  <button class="toggle-mode" onclick="toggleMode()">
+    <i id="mode-icon" class="fas fa-moon"></i>
+  </button>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="sobre-mi.html">Sobre mí</a>
+    <a href="recetas.html">Recetas</a>
+  </nav>
+</header>
+
+<main>
+  <section class="receta-principal">
+    <h2>Quesadillas de Huitlacoche</h2>
+    <img src="chiles.jpg" alt="Quesadillas de Huitlacoche" style="width:100%; max-width:400px;">
+    <p>Quesadillas rellenas de huitlacoche, el "caviar mexicano", con queso fundido y salsas.</p>
+    <button class="btn-receta" onclick="mostrarReceta('Quesadillas de Huitlacoche')">Ver ingredientes y preparación</button>
+  </section>
+  <section>
+    <a href="index.html">← Regresar a todas las recetas</a>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Mi Recetario</p>
+</footer>
+
+<script>
+function toggleMode() {
+  document.body.classList.toggle('light-mode');
+  const icon = document.getElementById('mode-icon');
+  if(document.body.classList.contains('light-mode')){
+    icon.classList.remove('fa-moon');
+    icon.classList.add('fa-sun');
+  } else {
+    icon.classList.remove('fa-sun');
+    icon.classList.add('fa-moon');
+  }
+}
+
+function mostrarReceta(nombre) {
+  alert('350 g de manteca de cerdo.1 kg de harina de maíz para tamales.1 cucharadita de polvo para hornear.½ taza de agua con tequesquite.½ taza de caldo de pollo.1 cucharada de sal. ' + nombre);
+}
+</script>
+
+</body>
+</html>
